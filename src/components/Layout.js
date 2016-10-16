@@ -7,6 +7,9 @@ export default React.createClass({
      <div>
         <NavBar/>
        {this.props.children}
+       <footer className="footer">
+         <p>This is the footer</p>
+       </footer>
      </div>
    )
   }

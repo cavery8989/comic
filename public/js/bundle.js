@@ -67,7 +67,7 @@
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
-	var _LandingPage = __webpack_require__(237);
+	var _LandingPage = __webpack_require__(238);
 
 	var _LandingPage2 = _interopRequireDefault(_LandingPage);
 
@@ -27128,7 +27128,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _NavBar = __webpack_require__(238);
+	var _NavBar = __webpack_require__(237);
 
 	var _NavBar2 = _interopRequireDefault(_NavBar);
 
@@ -27142,50 +27142,14 @@
 	      'div',
 	      null,
 	      _react2.default.createElement(_NavBar2.default, null),
-	      this.props.children
-	    );
-	  }
-	});
-
-/***/ },
-/* 237 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _react2.default.createClass({
-	  displayName: "LandingPage",
-
-	  render: function render() {
-	    return _react2.default.createElement(
-	      "div",
-	      { className: "landing-page hero" },
+	      this.props.children,
 	      _react2.default.createElement(
-	        "div",
-	        { className: " part-one" },
+	        'footer',
+	        { className: 'footer' },
 	        _react2.default.createElement(
-	          "h1",
+	          'p',
 	          null,
-	          "Welcome to comic ex"
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: " part-two" },
-	        _react2.default.createElement(
-	          "h1",
-	          null,
-	          "Welcome to comic ex"
+	          'This is the footer'
 	        )
 	      )
 	    );
@@ -27193,7 +27157,7 @@
 	});
 
 /***/ },
-/* 238 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27302,6 +27266,147 @@
 	              "Download"
 	            )
 	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _SectionOne = __webpack_require__(239);
+
+	var _SectionOne2 = _interopRequireDefault(_SectionOne);
+
+	var _SectionTwo = __webpack_require__(240);
+
+	var _SectionTwo2 = _interopRequireDefault(_SectionTwo);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: 'LandingPage',
+
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'landing-page hero' },
+	      _react2.default.createElement(_SectionOne2.default, null),
+	      _react2.default.createElement(_SectionTwo2.default, null)
+	    );
+	  }
+	});
+
+/***/ },
+/* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: "SectionOne",
+
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: " banner hero" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "is-pulled-left" },
+	          _react2.default.createElement(
+	            "h1",
+	            { className: "landing-bang " },
+	            "comic ex"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "is-pulled-right sign-in-links" },
+	          _react2.default.createElement(
+	            "a",
+	            null,
+	            "Sign In"
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            null,
+	            "Sign Up"
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: "SectionTwo",
+
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: " part-two" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "columns" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "column is-4" },
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "col 1"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "column is-4" },
+	          "col 2"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "column is-4" },
+	          "col 3"
 	        )
 	      )
 	    );

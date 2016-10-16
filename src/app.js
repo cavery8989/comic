@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import {Router, browserHistory, Route, IndexRoute} from 'react-router';
 import Layout from './components/Layout';
-import LandingPage from './components/LandingPage';
+import LandingPage from './components/landingPage/LandingPage';
 
 const App = React.createClass({
   render: function () {
