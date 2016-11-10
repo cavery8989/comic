@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 const validate = require('webpack-validator');
 const path = require('path');
 const bundleFolder = path.join(__dirname, 'public', 'js');
@@ -23,6 +24,13 @@ module.exports = validate({
         query: {
           presets: ['es2015', 'react']
         }
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
       }
     ]
   },

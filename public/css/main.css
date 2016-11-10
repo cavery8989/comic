@@ -1,43 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Happy+Monkey');
 @import url('https://fonts.googleapis.com/css?family=Bangers');
-
-.nav{
-    background: #e03636;
+/*body { padding-top: 10px; }*/
+nav.navbar.navbar-light.bg-faded {
+    background: #e81212;
+    padding: 0 10px 0 10px;
 }
 
-.banner {
-    height: 15%;
-    width: 100%;
-    background: red;
-    background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
-    background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #bd2d10 0, #f4502f 30%, #ff6e51 50%, #f4502f 70%, #bd2d10 100%);
+.sign-in-up {
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+.sign-in-up button{
+    margin-right:10px;
+}
+
+a.navbar-brand {
+    color: blue;
+    font-size: 3.2em;
     font-family: 'Bangers', cursive;
     text-shadow: -1px -1px yellow, 1px 1px;
+
 }
 
-.banner h1{
-    font-size: 10em;
-    padding-left: 10px;
+.home-header{
+    background: url('../assets/images/comicBackground.jpg') center center;
+    background-size: 90%;
+
 }
 
-.sign-in-links{
-    align-self: flex-end;
+.header-text-container{
+    color: #ebebeb;
+    background: rgba(0, 0, 0, 0.7);
 }
 
-.banner a {
-    font-size: 5em;
-    color: #4a4a4a;
-    padding-right: 20px;
+img {
+    min-width: 100%;
+    max-width: 100%;
 }
-
-.banner a:hover {
-    font-size: 5em;
-    color: white;
-}
-
-.section-two{
-    height: 40vh;
-}
-
-
-

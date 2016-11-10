@@ -27142,14 +27142,117 @@
 	      'div',
 	      null,
 	      _react2.default.createElement(_NavBar2.default, null),
-	      this.props.children,
+	      _react2.default.createElement(
+	        'section',
+	        { className: 'jumbotron text-xs-center' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'container' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'jumbotron-heading' },
+	            'Album example'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'lead text-muted' },
+	            'Something short and leading about the collection below\u2014its contents, the creator, etc. Make it short and sweet, but not too short so folks don\'t simply skip over it entirely.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: '#', className: 'btn btn-primary' },
+	              'Main call to action'
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: '#', className: 'btn btn-secondary' },
+	              'Secondary action'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'album text-muted' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'container' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'card' },
+	              _react2.default.createElement('img', { 'data-src': 'holder.js/100px280/thumb', alt: 'Card image cap' }),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'card-text' },
+	                'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'card' },
+	              _react2.default.createElement('img', { 'data-src': 'holder.js/100px280/thumb', alt: 'Card image cap' }),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'card-text' },
+	                'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'card' },
+	              _react2.default.createElement('img', { 'data-src': 'holder.js/100px280/thumb', alt: 'Card image cap' }),
+	              _react2.default.createElement(
+	                'p',
+	                { className: 'card-text' },
+	                'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+	              )
+	            )
+	          )
+	        )
+	      ),
 	      _react2.default.createElement(
 	        'footer',
-	        { className: 'footer' },
+	        { className: 'text-muted' },
 	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'This is the footer'
+	          'div',
+	          { className: 'container' },
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'float-xs-right' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: '#' },
+	              'Back to top'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Album example is \xA9 Bootstrap, but please download and customize it for yourself!'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'New to Bootstrap? ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: '../../' },
+	              'Visit the homepage'
+	            ),
+	            ' or read our ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: '../../getting-started/' },
+	              'getting started guide'
+	            ),
+	            '.'
+	          )
 	        )
 	      )
 	    );
@@ -27177,94 +27280,28 @@
 
 	  render: function render() {
 	    return _react2.default.createElement(
-	      "nav",
-	      { className: "nav" },
+	      "div",
+	      null,
 	      _react2.default.createElement(
-	        "div",
-	        { className: "nav-left" },
+	        "nav",
+	        { className: "navbar navbar-light bg-faded navbar-full" },
 	        _react2.default.createElement(
 	          "a",
-	          { className: "nav-item is-brand", href: "#" },
-	          _react2.default.createElement("img", { src: "/images/bulma-type.png", alt: "Bulma logo" })
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "nav-center" },
+	          { className: "navbar-brand", href: "#" },
+	          "Comic Ex"
+	        ),
 	        _react2.default.createElement(
-	          "a",
-	          { className: "nav-item", href: "#" },
+	          "div",
+	          { className: "nav navbar-nav float-xs-right sign-in-up" },
 	          _react2.default.createElement(
-	            "span",
-	            { className: "icon" },
-	            _react2.default.createElement("i", { className: "fa fa-github" })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "a",
-	          { className: "nav-item", href: "#" },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "icon" },
-	            _react2.default.createElement("i", { className: "fa fa-twitter" })
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "span",
-	        { className: "nav-toggle" },
-	        _react2.default.createElement("span", null),
-	        _react2.default.createElement("span", null),
-	        _react2.default.createElement("span", null)
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "nav-right nav-menu" },
-	        _react2.default.createElement(
-	          "a",
-	          { className: "nav-item", href: "#" },
-	          "Home"
-	        ),
-	        _react2.default.createElement(
-	          "a",
-	          { className: "nav-item", href: "#" },
-	          "Documentation"
-	        ),
-	        _react2.default.createElement(
-	          "a",
-	          { className: "nav-item", href: "#" },
-	          "Blog"
-	        ),
-	        _react2.default.createElement(
-	          "span",
-	          { className: "nav-item" },
-	          _react2.default.createElement(
-	            "a",
-	            { className: "button" },
-	            _react2.default.createElement(
-	              "span",
-	              { className: "icon" },
-	              _react2.default.createElement("i", { className: "fa fa-twitter" })
-	            ),
-	            _react2.default.createElement(
-	              "span",
-	              null,
-	              "Tweet"
-	            )
+	            "button",
+	            { type: "button", className: "btn btn-primary" },
+	            "Sign UP"
 	          ),
 	          _react2.default.createElement(
-	            "a",
-	            { className: "button is-primary", href: "#" },
-	            _react2.default.createElement(
-	              "span",
-	              { className: "icon" },
-	              _react2.default.createElement("i", { className: "fa fa-download" })
-	            ),
-	            _react2.default.createElement(
-	              "span",
-	              null,
-	              "Download"
-	            )
+	            "button",
+	            { type: "button", className: "btn btn-primary" },
+	            "Sign In"
 	          )
 	        )
 	      )
@@ -27300,12 +27337,7 @@
 	  displayName: 'LandingPage',
 
 	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'landing-page hero' },
-	      _react2.default.createElement(_SectionOne2.default, null),
-	      _react2.default.createElement(_SectionTwo2.default, null)
-	    );
+	    return _react2.default.createElement('div', null);
 	  }
 	});
 
@@ -27385,28 +27417,59 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      "div",
-	      { className: " part-two" },
+	      { className: "section-two" },
 	      _react2.default.createElement(
 	        "div",
-	        { className: "columns" },
+	        { className: "tile is-ancestor" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "column is-4" },
+	          { className: "tile is-5 is-vertical is-parent" },
 	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "col 1"
+	            "div",
+	            { className: "tile is-child box panel-one" },
+	            _react2.default.createElement(
+	              "p",
+	              { className: "title" },
+	              "One"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Sing up for free"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "tile is-child box panel-two" },
+	            _react2.default.createElement(
+	              "p",
+	              { className: "title" },
+	              "Two"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Post your unused comics"
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "column is-4" },
-	          "col 2"
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "column is-4" },
-	          "col 3"
+	          { className: "tile is-parent" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "tile is-child box panel-three" },
+	            _react2.default.createElement(
+	              "p",
+	              { className: "title" },
+	              "Three"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Set up trades with people all over the world!!"
+	            )
+	          )
 	        )
 	      )
 	    );
